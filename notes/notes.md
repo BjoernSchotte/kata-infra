@@ -14,7 +14,7 @@
 - Katas sind YAML Dateien
 - Katas sind lokalisiert
 - Katas enthalten pandoc markdown templates, um YAML nach Markdown konvertieren zu lassen
-- Katas enthalten eine eindeutige UUID
+- Katas enthalten eine eindeutige UUID (erzeugt zB mit [einem UUID Generator](https://www.uuidgenerator.net/))
 
 ### Learnjourneys
 
