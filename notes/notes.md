@@ -66,7 +66,9 @@ Ein Lernpfad besteht aus:
  - Lern-Methodik (zB lernOS)
  - Benötigte Markdown-Dateien in Reihenfolge
  - Iterations-Definition
-  - Katas je Iteration
+  - Katas je Iteration (Kata IDs aus dem Kata Repo)
  - Weiteren Angaben
 
 Die Konfiguration des Lernpfads definiert also, welche Markdown-Dateien es für erläuternden Text braucht, und wie die einzelnen Iterationen (zB in Wochen organisiert) aussehen. Je Iteration sind dann ein oder mehrere Katas zugeordnet, die durchlaufen werden sollen.
+
+Damit ist es möglich, Lernpfade zu bauen, die zB nur sehr kurz sind (4 Wochen), oder länger dauern (12 Wochen). Darüber hinaus sind alle relevanten Meta-Daten für den Lernpfad (Subject Matter Expert, Zielstellung des Lernpfads etc.) von eigentlichen Text-Inhalten separiert.
