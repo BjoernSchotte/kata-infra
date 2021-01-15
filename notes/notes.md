@@ -2,7 +2,7 @@
 
 ## Ziele
 
-- Erstellen von Learnjourneys nach dem lernOS Prinzip
+- Erstellen von Learnjourneys nach dem [lernOS](https://lernos.org) Prinzip (oder abstrakter: Leanjourneys zu definieren, die gerichtet, iterativ und (in Gruppen) selbst gesteuert ablaufen)
 - Separation of concerns: Flipped Classroom Übungen (Katas) sind separiert und als YAML-Files erstellt
 - Dadurch können Katas prinzipiell von jedem submitted werden
 - Es können sehr einfach und sehr schnell eigene Lernpfade (zB GTD for Beginner, GTD for Advanced) generiert werden, mit einer Collection von Katas
