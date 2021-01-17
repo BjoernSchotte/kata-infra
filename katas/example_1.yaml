@@ -18,7 +18,7 @@ kata:
     Diese Kata ist eine Test-Kata, und diese geht
     über mehrere Zeilen.
 
-    Sogar ganze Absätze.
+    Sogar ganze Absätze. Und noch ein Text.
   steps:
     - "First, do this"
     - |
