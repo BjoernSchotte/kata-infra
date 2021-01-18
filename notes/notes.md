@@ -111,9 +111,9 @@ learnjourney:
     - outro1.md
     - outro2.md
   katas:
-    - <id>
-    - <id2>
-    - <id3>
+    - 1: "<id>"
+    - 2: "<id2>"
+    - 3: "<id3>"
   seeAlso:
     - <journeyId>
     - <journey2Id>
@@ -145,3 +145,17 @@ gtdbeginners/
 ```
 
 ```config.yaml``` enthält die maschinenlesbare Konfiguration des Lernpfads (siehe oben). Daneben befinden sich die einzelnen Dateien sortiert nach Sprachen (ISO-Code) in entsprechenden Unterverzeichnissen.
+
+## Wie wird ein Lernpfad gebaut?
+
+Katas sind Übungen, die für sich atomar stehen und Bestandteil eines eigenen Repositories sind, das in das allgemeine Build-Repo reinverlinkt ist. Sie könnten auch aus einer Datenbank kommen.
+
+Anhand der UUID ist eine Kata eineindeutig identifizierbar.
+
+Abstrakt gesehen besteht ein Lernpfad aus
+
+- Einer Einleitung, bestehend aus einer oder mehreren Markdown-Dateien
+- Einer Abfolge von Katas für die jeweilige Iteration (ebenfalls Markdown-Dateien)
+- Einem Outtro, bestehend aus einer oder mehreren Markdown-Dateien
+
+Diese Dateien werden nacheinander entsprechend der Konfigurations-Reihenfolge dazu genutzt, ein Gesamtkonstrukt, zB ein PDF oder ePub, zu bauen. In ihrer Gesamtheit ergeben sie einen fertigen Lernpfad.
