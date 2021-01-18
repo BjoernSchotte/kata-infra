@@ -75,3 +75,13 @@ Die Konfiguration des Lernpfads definiert also, welche Markdown-Dateien es für 
 Damit ist es möglich, Lernpfade zu bauen, die zB nur sehr kurz sind (4 Wochen), oder länger dauern (12 Wochen). Darüber hinaus sind alle relevanten Meta-Daten für den Lernpfad (Subject Matter Expert, Zielstellung des Lernpfads etc.) von eigentlichen Text-Inhalten separiert.
 
 Nach einem Konvertierungsprozess entstehen für diesen Lernpfad Dateien in entsprechenden Formaten wie PDF oder eBooks (epub/mobi) oder direkt nutzbare HTML Webseiten, um einen Lernpfad zu beschreiten.
+
+Was ist bei einem Lernpfad wichtig zu wissen?
+
+- Das Thema: Also zum Beispiel "GTD for Beginners" oder "Mastering the Pitfalls of GTD"
+- Das Ziel / Outcome: Was wird der Lernende nach Durcharbeiten des Lernpfads erreicht haben, wenn er konsequent dabei bleibt?
+- Die Dauer: bei lernOS sind es 13 Wochen, aber vielleicht gibt es kürzere Lernpfade
+- Lern-Setup: Ist das ein Lernpfad für Alleine und/oder fürs Tandem und/oder für einen Lern-Circle? Als Empfehlung gedacht
+- Katas: Auf jeden Fall ein Gesamtüberblick aller Katas (Kata-Title + ID)
+- See also: Vielleicht ein Verweis auf weitere, andere Lernpfade ("GTD for Beginners" verweist auf "Mastering the pitfalls of GTD" und "GTD with Omnifocus")
+- SME (Subject Matter Expert): Von wem stammt dieser Lernpfad, und welche Lizenz hat dieser Lernpfad
