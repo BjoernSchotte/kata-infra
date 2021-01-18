@@ -85,3 +85,36 @@ Was ist bei einem Lernpfad wichtig zu wissen?
 - Katas: Auf jeden Fall ein Gesamtüberblick aller Katas (Kata-Title + ID)
 - See also: Vielleicht ein Verweis auf weitere, andere Lernpfade ("GTD for Beginners" verweist auf "Mastering the pitfalls of GTD" und "GTD with Omnifocus")
 - SME (Subject Matter Expert): Von wem stammt dieser Lernpfad, und welche Lizenz hat dieser Lernpfad
+
+Beispiel-Konfiguration eines Lernpfads:
+
+```
+meta:
+  author: "Björn Schotte"
+  email: "bjoern.schotte@mayflower.de"
+  version: "0.1"
+  license: "CC-BY-SA 4.0"
+learnjourney:
+  language: "de_DE"
+  title: "Gettting Things Done for Beginners"
+  goal: |
+    With this learning journey, you will be able to follow the GTD methodology and live a more organized life.
+  iterations: 10
+  teamSetup:
+    - single
+    - double
+    - circle
+  introTexts:
+    - intro1.md
+    - intro2.md
+  outroTexts:
+    - outro1.md
+    - outro2.md
+  katas:
+    - <id>
+    - <id2>
+    - <id3>
+  seeAlso:
+    - <journeyId>
+    - <journey2Id>
+```
