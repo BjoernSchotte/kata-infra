@@ -61,7 +61,7 @@ echo '' | pandoc --metadata-file katas/po_foo_1.yaml -t markdown --template kata
 
 ## Einen Lernpfad definieren
 
-Ein Lernpfad besteht aus:
+### Ein Lernpfad besteht aus:
 
 - Einer Konfiguration von
  - Lern-Methodik (zB lernOS)
@@ -76,7 +76,7 @@ Damit ist es möglich, Lernpfade zu bauen, die zB nur sehr kurz sind (4 Wochen),
 
 Nach einem Konvertierungsprozess entstehen für diesen Lernpfad Dateien in entsprechenden Formaten wie PDF oder eBooks (epub/mobi) oder direkt nutzbare HTML Webseiten, um einen Lernpfad zu beschreiten.
 
-Was ist bei einem Lernpfad wichtig zu wissen?
+### Was ist bei einem Lernpfad wichtig zu wissen?
 
 - Das Thema: Also zum Beispiel "GTD for Beginners" oder "Mastering the Pitfalls of GTD"
 - Das Ziel / Outcome: Was wird der Lernende nach Durcharbeiten des Lernpfads erreicht haben, wenn er konsequent dabei bleibt?
@@ -86,7 +86,7 @@ Was ist bei einem Lernpfad wichtig zu wissen?
 - See also: Vielleicht ein Verweis auf weitere, andere Lernpfade ("GTD for Beginners" verweist auf "Mastering the pitfalls of GTD" und "GTD with Omnifocus")
 - SME (Subject Matter Expert): Von wem stammt dieser Lernpfad, und welche Lizenz hat dieser Lernpfad
 
-Beispiel-Konfiguration eines Lernpfads:
+### Beispiel-Konfiguration eines Lernpfads:
 
 ```
 meta:
@@ -118,3 +118,30 @@ learnjourney:
     - <journeyId>
     - <journey2Id>
 ```
+
+### Verzeichnis-Struktur eines Lernpfads
+
+Die Verzeichnisstruktur könnte wie folgt aussehen, am Beispiel des "GTD für Anfänger"-Lernpfads:
+
+```
+gtdbeginners/
+`- config.yaml
+`- de_DE
+ `- src/
+  `- introduction-short.md
+  `- introduction-long.md
+  `- thankyou-short.md
+  `- thankyou-long.md
+ `- assets/
+  `- gtd-overview-de.png
+`-en_US
+ `- src/
+  `- introduction-short.md
+  `- introduction-long.md
+  `- thankyou-short.md
+  `- thankyou-long.md
+ `- assets/
+  `- gtd-overview-en.png
+```
+
+```config.yaml``` enthält die maschinenlesbare Konfiguration des Lernpfads (siehe oben). Daneben befinden sich die einzelnen Dateien sortiert nach Sprachen (ISO-Code) in entsprechenden Unterverzeichnissen.
