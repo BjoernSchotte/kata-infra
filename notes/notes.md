@@ -1,6 +1,6 @@
 # Notizen
 
-## Ziele
+# Ziele
 
 - Erstellen von Learnjourneys nach dem [lernOS](https://lernos.org) Prinzip (oder abstrakter: Leanjourneys zu definieren, die gerichtet, iterativ und (in Gruppen) selbst gesteuert ablaufen)
 - Separation of concerns: Flipped Classroom Übungen (Katas) sind separiert und als YAML-Files erstellt
@@ -9,7 +9,7 @@
 - Katas als YAML weil maschinenlesbar und damit auch für andere Systeme konvertierbar
 - Automatisierter build process via Github Actions sowie pandoc docker image
 
-### Katas
+# Katas
 
 - Katas sind YAML Dateien
 - Katas sind lokalisiert
@@ -17,14 +17,14 @@
 - Katas enthalten eine eindeutige UUID (erzeugt zB mit [einem UUID Generator](https://www.uuidgenerator.net/))
 - Katas bekommen ein YAML Schema, um validiert werden zu können
 
-### Learnjourneys
+# Learnjourneys
 
 - Learnjourneys sind Markdown-Dateien mit erklärendem Text
 - Zusätzlich eine Ansammlung von Katas, konfiguriert per YAML file, das enthält
   - Language ISO Code
   - Liste der UUID der Katas, die eingebunden werden sollen
 
-## Kata Repostruktur
+# Kata Repostruktur
 
 REPONAME wird per git submodule in die eigentliche Build-Infra des Haupt-Repos eingebunden.
 
@@ -59,9 +59,15 @@ Beispiel:
 echo '' | pandoc --metadata-file katas/po_foo_1.yaml -t markdown --template katalib/templates/mytemplate.md -o output/output.md
 ```
 
-## Einen Lernpfad definieren
+## Kata Automations
 
-### Ein Lernpfad besteht aus:
+Die Idee ist, über eine build pipeline anhand der Kata Templates fertige Markdown-Dateien (plus Assets) zu generieren, die dann weiter verwendet werden können.
+
+Da Katas einzelne atomare Einheiten sind, können diese zu bestimmten Themen beliebig hinzugefügt werden. Anhand ihrer UUID sind sie eineindeutig identifizierbar.
+
+# Einen Lernpfad definieren
+
+## Ein Lernpfad besteht aus:
 
 - Einer Konfiguration von
  - Lern-Methodik (zB lernOS)
@@ -76,7 +82,7 @@ Damit ist es möglich, Lernpfade zu bauen, die zB nur sehr kurz sind (4 Wochen),
 
 Nach einem Konvertierungsprozess entstehen für diesen Lernpfad Dateien in entsprechenden Formaten wie PDF oder eBooks (epub/mobi) oder direkt nutzbare HTML Webseiten, um einen Lernpfad zu beschreiten.
 
-### Was ist bei einem Lernpfad wichtig zu wissen?
+## Was ist bei einem Lernpfad wichtig zu wissen?
 
 - Das Thema: Also zum Beispiel "GTD for Beginners" oder "Mastering the Pitfalls of GTD"
 - Das Ziel / Outcome: Was wird der Lernende nach Durcharbeiten des Lernpfads erreicht haben, wenn er konsequent dabei bleibt?
@@ -86,7 +92,7 @@ Nach einem Konvertierungsprozess entstehen für diesen Lernpfad Dateien in entsp
 - See also: Vielleicht ein Verweis auf weitere, andere Lernpfade ("GTD for Beginners" verweist auf "Mastering the pitfalls of GTD" und "GTD with Omnifocus")
 - SME (Subject Matter Expert): Von wem stammt dieser Lernpfad, und welche Lizenz hat dieser Lernpfad
 
-### Beispiel-Konfiguration eines Lernpfads:
+## Beispiel-Konfiguration eines Lernpfads:
 
 ```
 meta:
@@ -119,7 +125,7 @@ learnjourney:
     - <journey2Id>
 ```
 
-### Verzeichnis-Struktur eines Lernpfads
+## Verzeichnis-Struktur eines Lernpfads
 
 Die Verzeichnisstruktur könnte wie folgt aussehen, am Beispiel des "GTD für Anfänger"-Lernpfads:
 
