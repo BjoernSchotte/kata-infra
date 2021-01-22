@@ -30,18 +30,22 @@ REPONAME wird per git submodule in die eigentliche Build-Infra des Haupt-Repos e
 
 ```
 REPONAME
-`-de_DE
- `-katas
+`-de_DE/
+ `- katas/
   `- mykata1.md
   `- mykata2.md
   `- mykata3.md
- `-assets
-  `-ab1b3f13-006b-4507-ab7e-e7dc09662c03
+ `- assets/
+  `- ab1b3f13-006b-4507-ab7e-e7dc09662c03/
    `- file.png
- `-templates
+ `- templates/
   `- tpl1.md
   `- tpl2.md
- `-output
+ `-output/ # generated during build process
+  `- ab1b3f13-006b-4507-ab7e-e7dc09662c03/
+    `- kata.md
+    `- assets/
+      `- file.png
 `-en_US
  `-katas
   `- mykata1.md
