@@ -1,4 +1,7 @@
-# Notizen
+# Nützliche Links
+
+- [YAML nach JSON online konvertieren](https://onlineyamltools.com/convert-yaml-to-json)
+- [UUIDs generieren](https://www.uuidgenerator.net/)
 
 # Ziele
 
@@ -121,9 +124,17 @@ learnjourney:
     - outro1.md
     - outro2.md
   katas:
-    - 1: "<id>"
-    - 2: "<id2>"
-    - 3: "<id3>"
+    -
+      iteration: 1
+      id: "<id>"
+    -
+      iteration: 2
+      id:
+      - "<id2>"
+      - "<id23>"
+    -
+      iteration: 3
+      id: "<id3>"
   seeAlso:
     - <journeyId>
     - <journey2Id>
