@@ -180,3 +180,9 @@ Abstrakt gesehen besteht ein Lernpfad aus
 - Einem Outtro, bestehend aus einer oder mehreren Markdown-Dateien
 
 Diese Dateien werden nacheinander entsprechend der Konfigurations-Reihenfolge dazu genutzt, ein Gesamtkonstrukt, zB ein PDF oder ePub, zu bauen. In ihrer Gesamtheit ergeben sie einen fertigen Lernpfad.
+
+# Tool Notizen
+
+## mkdocs
+
+Tags plugin: https://github.com/jldiaz/mkdocs-plugin-tags
