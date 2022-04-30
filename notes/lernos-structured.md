@@ -52,6 +52,51 @@ Every element is one file, based on
       `- kata2.yaml
     `- README.md
 ```
+## Example Kata
+
+A kata is a YAML file which has all the markdown in it. The kata structure goes as follows:
+
+```
+---
+meta:
+  author: "Björn Schotte"
+  email: bjoern.schotte@mayflower.de
+  version: 0.1
+
+kata:
+  id: ab1b3f13-006b-4507-ab7e-e7dc09662c03
+  title: "Dies ist meine erste Kata!"
+  description: "While this is bla bla, this is bla bla"
+  tags:
+    - "eins"
+    - "zwei"
+    - "drei"
+  difficultyLevel: "Immediate"
+  timeToPractice: 60
+  goal: |
+    Diese Kata ist eine Test-Kata, und diese geht
+    über mehrere Zeilen.
+    Sogar ganze Absätze. Und noch ein Text.
+  steps:
+    - "First, do this"
+    - |
+      Then, do that
+        1. and that
+        2. and this
+  outroSteps: |
+    Hier sind ein paar nützliche Tipps. Du kannst natürlich schauen, was du daraus machst.
+    Auch wenn das unklar ist, so geht dies über mehrere Zeilen.
+  checks: ""
+  links:
+    -
+      title: "Mayflower"
+      url: "https://mayflower.de/"
+      comment: "Hier findest du tolle Dinge für Agile Softwareentwicklung"
+    -
+      title: "Heise Online"
+      url: "https://heise.de/"
+---
+```
 
 ## lernOS guide
 
