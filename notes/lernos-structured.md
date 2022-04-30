@@ -52,6 +52,10 @@ Every element is one file, based on
       `- kata2.yaml
     `- README.md
 ```
+## Example card
+
+Shall we go the .md route or structure it as a YAML file with markdown integrated?
+
 ## Example Kata
 
 A kata is a YAML file which has all the markdown in it. The kata structure goes as follows:
