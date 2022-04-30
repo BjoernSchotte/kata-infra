@@ -20,7 +20,7 @@ graph TD;
 
 A repo consists of
 
-- cards: bite-sized content for the learner
+- cards: bite-sized content for the learner. Can contain front / back content, short and long content
 - katas: katas for self-improving on the topic
 
 Every element is one file, based on
