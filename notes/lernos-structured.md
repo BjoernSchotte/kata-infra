@@ -38,6 +38,21 @@ Every element is one file, based on
 - YAML code for configuration, meta data
 - Markdown language for content: easy to learn, portable, extendable, transformable
 
+## Repo file structure
+
+```
+`- REPONAME
+  README.md
+  `- de_DE/
+    `- cards/
+      `- card-bla-bla.md
+      `- card-bla-blubb.md
+    `- katas/
+      `- kata1.md
+      `- kata2.md
+    `- README.md
+```
+
 ## lernOS guide
 
 A lernOS guide takes one or more learning repositories and provides a learning path for the learner on a specific topic.
