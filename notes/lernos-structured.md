@@ -48,8 +48,8 @@ Every element is one file, based on
       `- card-bla-bla.md
       `- card-bla-blubb.md
     `- katas/
-      `- kata1.md
-      `- kata2.md
+      `- kata1.yaml
+      `- kata2.yaml
     `- README.md
 ```
 
