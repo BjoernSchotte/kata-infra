@@ -6,6 +6,8 @@
 
 # Architecture
 
+## Learning repository
+
 ```mermaid
 graph TD;
   subgraph Repository
@@ -27,3 +29,13 @@ Every element is one file, based on
 
 - YAML code for configuration, meta data
 - Markdown language for content: easy to learn, portable, extendable, transformable
+
+## lernOS guide
+
+A lernOS guide takes one or more learning repositories and provides a learning path for the learner on a specific topic.
+
+The guide itself provides YAML based configuration data, i.e.
+
+- which learning repos to include
+- how many iterations you designed
+- which content (cards, katas) will be placed on which iteration
