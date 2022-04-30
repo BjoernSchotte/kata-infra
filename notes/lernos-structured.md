@@ -57,6 +57,34 @@ Every element is one file, based on
 
 A lernOS guide takes one or more learning repositories and provides a learning path for the learner on a specific topic.
 
+```mermaid
+flowchart LR
+  subgraph ...Iteration13
+    direction LR
+    Card30 -.-> Card31
+    Kata23
+  end
+  subgraph Iteration1
+    direction LR
+    Card5 -.-> Card6
+    Card6 -.-> Card7
+    Kata3
+  end
+  subgraph Iteration0
+    direction LR
+    Card3 -.-> Card4
+    Kata1 -.-> Kata2
+  end
+  subgraph Intro
+    direction LR
+    Card1
+    Card2
+  end
+  Intro --> Iteration0
+  Iteration0 --> Iteration1
+  Iteration1 --> ...Iteration13
+```
+
 The guide itself provides YAML based configuration data, i.e.
 
 - which learning repos to include
