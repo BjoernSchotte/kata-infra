@@ -6,6 +6,14 @@
 
 # Architecture
 
+## Idea
+
+- cards representing learning content for the learner
+- katas representing small exercises for the learner
+- mix & match:
+  - a bigger lernOS guide provides more structure through iterations etc
+  - search for tags i.e. "weekly-review" and you can individually mix the learning content
+
 ## Learning repository
 
 ```mermaid
