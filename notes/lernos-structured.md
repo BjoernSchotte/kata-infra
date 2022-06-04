@@ -1,4 +1,4 @@
-# Prerequisites
+# Prerequisites for structured lernOS
 
 - Leveraging the power of Open Source and Creative Commons, because knowledge should always be free
 - Create structure for the learning text and the learning katas
