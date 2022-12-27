@@ -2,8 +2,6 @@
 
 Ein Infra-Repo, um Katas (Lern-Übungen) mit markdown zu verbinden.
 
-Mit einem kurzen Update.
-
 # Lizenz
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
